@@ -177,6 +177,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         *  My custom composer service provider
+         */
+        App\Providers\ComposerServiceProvider::class
     ],
 
     /*
