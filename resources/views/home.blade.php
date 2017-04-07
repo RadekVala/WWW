@@ -1,5 +1,11 @@
 @extends('layouts.app')
 
+
+@section('main-menu')
+    @each('partials.menu-item', $menuArray, 'category')
+@endsection
+
+
 @section('content')
 <div class="container">
     <div class="row">

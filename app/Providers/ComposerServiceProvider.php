@@ -13,7 +13,12 @@ class ComposerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+
+        view()->composer(
+            '*', // attach this composer to all views
+            'App\Http\ViewComposers\MenuComposer'
+        );
+
     }
 
     /**
