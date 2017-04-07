@@ -15,7 +15,11 @@ class ComposerServiceProvider extends ServiceProvider
     {
 
         view()->composer(
-            '*', // attach this composer to all views
+            [
+                'category',
+                'home',
+                'welcome'
+            ], // attach this composer to all views
             'App\Http\ViewComposers\MenuComposer'
         );
 

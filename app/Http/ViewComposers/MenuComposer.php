@@ -4,7 +4,7 @@ namespace App\Http\ViewComposers;
 
 use Illuminate\View\View;
 
-use App\Categories; // use our Model class for categories
+use App\Category; // use our Model class for categories
 
 class MenuComposer
 {
@@ -24,7 +24,7 @@ class MenuComposer
     public function compose(View $view)
     {
         // load all categories using Model class
-        $rowMenu = Categories::all();
+        $rowMenu = Category::all();
 
         // use parseTree method to create a list of categories
         $this->menuTree = $this->parseTree($rowMenu,1);

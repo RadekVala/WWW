@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Contents extends Model
+class Tag extends Model
 {
     //
 }

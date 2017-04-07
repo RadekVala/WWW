@@ -11,10 +11,10 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Blog</div>
+                    <div class="panel-heading">Category: {{ $title }}</div>
 
                     <div class="panel-body">
-                        Content
+                        @each('partials.content-prev-item', $ContentArray, 'content')
                     </div>
                 </div>
             </div>
